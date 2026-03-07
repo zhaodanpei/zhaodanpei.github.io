@@ -1168,7 +1168,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffff6a;
+  background: #ffff37;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2383,7 +2383,7 @@ hr {
   display: inline-block;
 }
 .page {
-  background: radial-gradient(circle at top left, rgba(14,116,144,0.08), transparent 24%), linear-gradient(180deg, rgba(248,251,255,0.95), #fff 180px);
+  background: radial-gradient(circle at top left, rgba(37,99,235,0.1), transparent 24%), linear-gradient(180deg, rgba(248,251,255,0.95), #fff 180px);
 }
 .page .post-block {
   border-radius: 16px;
@@ -2402,23 +2402,13 @@ hr {
   pointer-events: none;
 }
 .page .post-header {
-  padding: 6px 0 20px;
-  text-align: center;
+  display: none;
 }
 .page .post-title {
   font-size: 1.95rem;
   font-weight: 700;
   letter-spacing: 0.02em;
   margin-bottom: 4px;
-}
-.page .post-title::after {
-  content: '';
-  display: block;
-  width: 72px;
-  height: 3px;
-  margin: 10px auto 0;
-  border-radius: 999px;
-  background: linear-gradient(90deg, #0f766e, #3b82f6);
 }
 .page .post-body {
   font-size: 15px;
@@ -2430,47 +2420,8 @@ hr {
   z-index: 1;
 }
 .airvic-brand {
-  display: flex;
-  align-items: center;
-  gap: 14px;
+  display: block;
   margin: 10px 0 14px;
-}
-.airvic-emblem {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  background: linear-gradient(180deg, rgba(255,255,255,0.16), rgba(255,255,255,0.06));
-  border: 1px solid rgba(255,255,255,0.22);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.18);
-}
-.airvic-emblem::before {
-  content: '';
-  position: absolute;
-  inset: 6px;
-  border-radius: 50%;
-  border: 1px solid rgba(255,255,255,0.22);
-}
-.airvic-emblem-core {
-  position: relative;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  border: 2px solid rgba(255,255,255,0.88);
-}
-.airvic-emblem-core::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.92);
-  transform: translate(-50%, -50%);
 }
 .airvic-brand-copy {
   display: flex;
@@ -2500,7 +2451,7 @@ hr {
   font-family: "Times New Roman", Georgia, serif;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #184b53;
+  color: #1e4fa3;
 }
 .profile-hero {
   margin: 4px 0 18px;
@@ -2512,11 +2463,11 @@ hr {
 }
 .profile-hero-card {
   display: grid;
-  grid-template-columns: 170px minmax(0, 1fr);
+  grid-template-columns: 118px minmax(0, 1fr);
   gap: 26px;
   padding: 22px 26px;
   border-radius: 18px;
-  background: linear-gradient(135deg, rgba(9,48,64,0.96), rgba(15,118,110,0.88));
+  background: linear-gradient(135deg, rgba(15,35,78,0.97), rgba(30,64,175,0.9));
   color: #f8fbff;
   box-shadow: 0 20px 38px rgba(15,23,42,0.14);
   width: 100%;
@@ -2524,8 +2475,8 @@ hr {
 }
 .profile-hero-card img {
   width: 100%;
-  max-width: 170px;
-  height: 190px;
+  max-width: 118px;
+  height: 138px;
   object-fit: cover;
   border-radius: 16px;
   border: 1px solid rgba(255,255,255,0.18);
@@ -2592,7 +2543,7 @@ hr {
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.14em;
-  color: #0f766e;
+  color: #2563eb;
 }
 .research-card h3 {
   margin: 0 0 6px;
@@ -2607,9 +2558,9 @@ hr {
 .recruitment-callout {
   margin: 6px 0 12px;
   padding: 14px 16px;
-  border-left: 4px solid #0f766e;
+  border-left: 4px solid #2563eb;
   border-radius: 0 12px 12px 0;
-  background: linear-gradient(90deg, rgba(15,118,110,0.1), rgba(255,255,255,0.92));
+  background: linear-gradient(90deg, rgba(37,99,235,0.1), rgba(255,255,255,0.92));
   color: #24415c;
 }
 .section-intro {
@@ -2657,23 +2608,23 @@ hr {
   margin-right: 6px;
   padding: 3px 10px;
   border-radius: 999px;
-  background: rgba(15,118,110,0.1);
-  border: 1px solid rgba(15,118,110,0.18);
-  color: #0f766e;
+  background: rgba(37,99,235,0.1);
+  border: 1px solid rgba(37,99,235,0.18);
+  color: #2563eb;
   text-decoration: none;
   transition: all 0.2s ease;
 }
 .page .post-body > table:first-of-type a:hover {
-  background: #0f766e;
-  border-color: #0f766e;
+  background: #2563eb;
+  border-color: #2563eb;
   color: #fff;
 }
 .page .post-body h2 {
   margin-top: 24px;
   margin-bottom: 10px;
   padding: 8px 14px;
-  border-left: 4px solid #0f766e;
-  background: linear-gradient(90deg, rgba(15,118,110,0.1), rgba(15,118,110,0.02));
+  border-left: 4px solid #2563eb;
+  background: linear-gradient(90deg, rgba(37,99,235,0.1), rgba(37,99,235,0.02));
   border-radius: 0 10px 10px 0;
   font-size: 1.22rem;
 }
@@ -2690,7 +2641,7 @@ hr {
   content: '';
   width: 28px;
   height: 2px;
-  background: linear-gradient(90deg, #0f766e, rgba(15,118,110,0.15));
+  background: linear-gradient(90deg, #2563eb, rgba(37,99,235,0.15));
 }
 .page .post-body p {
   margin: 0 0 10px;
@@ -2703,7 +2654,7 @@ hr {
   margin-bottom: 6px;
 }
 .page .post-body ul li::marker {
-  color: #0f766e;
+  color: #2563eb;
 }
 .page .post-body h2 + ul li {
   padding: 6px 10px;
@@ -2718,8 +2669,8 @@ hr {
   transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
 .page .post-body a:hover {
-  color: #0f766e;
-  text-decoration-color: #0f766e;
+  color: #2563eb;
+  text-decoration-color: #2563eb;
 }
 .page .post-body li a:first-child {
   font-weight: 600;
@@ -2738,8 +2689,8 @@ hr {
 .page .post-body blockquote {
   margin: 12px 0;
   padding: 10px 14px;
-  border-left: 4px solid #7dd3c7;
-  background: rgba(244,251,250,0.95);
+  border-left: 4px solid #93c5fd;
+  background: rgba(239,246,255,0.95);
   border-radius: 0 10px 10px 0;
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.68);
 }
@@ -2774,10 +2725,10 @@ hr {
     font-size: 1.65rem;
   }
   .airvic-brand {
-    align-items: flex-start;
+    display: block;
   }
   .airvic-word {
-    font-size: 1.38rem;
+    font-size: 1.24rem;
     letter-spacing: 0.16em;
   }
   .airvic-subtitle {
@@ -2790,9 +2741,9 @@ hr {
     grid-template-columns: 1fr;
   }
   .profile-hero-card img {
-    width: 124px;
-    max-width: 124px;
-    height: 154px;
+    width: 96px;
+    max-width: 96px;
+    height: 116px;
   }
   .research-grid {
     grid-template-columns: 1fr;
