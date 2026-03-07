@@ -1168,7 +1168,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #a459ff;
+  background: #05e7ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2429,6 +2429,70 @@ hr {
   position: relative;
   z-index: 1;
 }
+.airvic-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 10px 0 14px;
+}
+.airvic-emblem {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(125,211,252,0.22), rgba(255,255,255,0.08));
+  border: 1px solid rgba(255,255,255,0.16);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.24);
+}
+.airvic-emblem::before {
+  content: '';
+  position: absolute;
+  inset: 9px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.18);
+  transform: rotate(45deg);
+}
+.airvic-emblem-core {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #67e8f9, #f8fafc);
+  box-shadow: 0 0 0 5px rgba(103,232,249,0.08);
+}
+.airvic-brand-copy {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.airvic-word {
+  display: block;
+  color: #fff;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.airvic-subtitle {
+  display: block;
+  margin-top: 5px;
+  color: rgba(226,232,240,0.86);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.airvic-inline {
+  display: inline-block;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #0e5f67;
+}
 .profile-hero {
   margin: 4px 0 18px;
 }
@@ -2736,6 +2800,16 @@ hr {
   }
   .page .post-title {
     font-size: 1.65rem;
+  }
+  .airvic-brand {
+    align-items: flex-start;
+  }
+  .airvic-word {
+    font-size: 1.45rem;
+    letter-spacing: 0.14em;
+  }
+  .airvic-subtitle {
+    font-size: 9px;
   }
   .profile-hero-main {
     grid-template-columns: 1fr;
